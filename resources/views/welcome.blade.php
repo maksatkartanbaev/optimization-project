@@ -15,7 +15,7 @@
     </head>
     <body class="antialiased">
         <div class="max-w-screen-2xl mx-auto">
-            <header class="m-3">
+            <header class="m-5">
                 <ul class="flex flex-wrap gap-6">
                     <li><a href="/">Home</a></li>
                     <li><a href="/users">Users</a></li>
