@@ -13,8 +13,8 @@ class DatabaseSeeder extends Seeder
      */
     public function run(): void
     {
-        User::factory(10000)->create();
-
-        Profile::factory(100000)->create();
+        User::factory(10000)
+            ->has(Profile::factory(10), 'profiles')
+            ->create();
     }
 }

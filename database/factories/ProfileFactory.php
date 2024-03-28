@@ -18,7 +18,6 @@ class ProfileFactory extends Factory
     public function definition(): array
     {
         return [
-            'user_id' => 1,
             'name' => fake()->name()
         ];
     }
