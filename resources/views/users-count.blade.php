@@ -1,0 +1,13 @@
+@extends('welcome')
+@section('content')
+    <div>
+        <table>
+            <tr>
+                <th>Count</th>
+            </tr>
+            <tr>
+                <td>{{App\Models\User::select('id')->count()}}</td>
+            </tr>
+        </table>
+    </div>
+@endsection
