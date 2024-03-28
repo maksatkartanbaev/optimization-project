@@ -1,13 +1,15 @@
 @extends('welcome')
 @section('content')
-    <div>
-        <table>
+    <div class="m-3">
+        <table class="table w-full text-left">
             <tr>
-                <th>id</th>
-                <th>name</th>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Profile</th>
             </tr>
             @foreach($users as $user)
                 <tr>
+                    <td>{{$user->id}}</td>
                     <td>{{$user->name}}</td>
                     <td>{{$user->profiles()->latest()->first()?->name}}</td>
                 </tr>
