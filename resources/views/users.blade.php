@@ -16,6 +16,7 @@
                     <td>{{$user->name}}</td>
                     <td>{{$user->email}}</td>
                     <td>{{$user->profiles()->latest()->first()?->name}}</td>
+{{--                    <td>{{$user->lastProfile?->name}}</td>--}}
                     <td>{{$user->active}}</td>
                     <td>{{$user->created_at->diffForHumans() }}</td>
                 </tr>
