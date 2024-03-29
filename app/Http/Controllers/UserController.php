@@ -9,7 +9,7 @@ class UserController extends Controller
 {
     function index()
     {
-        $users = User::query()->with('profiles')->get();
+        $users = User::select(['id', 'name', 'email', 'active', 'created_at', 'description'])->where('active', true)->get();
 
         return view('users', ['users' => $users]);
     }
