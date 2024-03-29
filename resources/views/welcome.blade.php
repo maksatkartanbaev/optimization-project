@@ -20,6 +20,7 @@
                     <li><a href="/">Home</a></li>
                     <li><a href="/users">Users</a></li>
                     <li><a href="/users-count">Count users</a></li>
+                    <li><a href="/servers">Server last activity</a></li>
                 </ul>
             </header>
             @yield('content')
