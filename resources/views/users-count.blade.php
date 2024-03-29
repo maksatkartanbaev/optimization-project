@@ -1,3 +1,4 @@
+@php use App\Models\User; @endphp
 @extends('welcome')
 @section('content')
     <div>
@@ -6,7 +7,7 @@
                 <th>Count</th>
             </tr>
             <tr>
-                <td>{{App\Models\User::select('id')->count()}}</td>
+                <td>{{User::all()->count()}}</td>
             </tr>
         </table>
     </div>

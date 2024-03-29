@@ -2,13 +2,12 @@
 
 namespace Database\Factories;
 
-use App\Models\User;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
 /**
- * @extends \Illuminate\Database\Eloquent\Factories\Factory<\App\Models\Profile>
+ * @extends \Illuminate\Database\Eloquent\Factories\Factory<\App\Models\Log>
  */
-class ProfileFactory extends Factory
+class LogFactory extends Factory
 {
     /**
      * Define the model's default state.
@@ -18,7 +17,7 @@ class ProfileFactory extends Factory
     public function definition(): array
     {
         return [
-            'name' => fake()->name()
+            'text' => fake()->text()
         ];
     }
 }
